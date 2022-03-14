@@ -17,14 +17,6 @@ void get_edits(const char *p_row, const char *q_row,
     char *edits = *edits_buf = malloc(n + 1);
     assert(p && q && edits); // Don't want to handle allocation failures
 
-#ifdef EXERCISE
-    // FIXME: do the actual calculations here
-
-    p[0] = '\0';     // for now we just make
-    q[0] = '\0';     // empty strings
-    edits[0] = '\0'; // so at least we can run tests.
-#endif
-
     size_t j = 0, k = 0;
     for (size_t i = 0; i < n; i++)
     {
